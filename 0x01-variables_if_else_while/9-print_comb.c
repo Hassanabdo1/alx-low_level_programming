@@ -24,7 +24,7 @@ int main(void)
 		}
 		
 		digit++;
-	}		
+	}	
 	putchar('\n');
 
 	return (0);
