@@ -11,21 +11,22 @@
 
 int main(void)
 {
+	int digit = 0;
 
-	int i, j;
+	while (digit <= 9)
+	{
+		putchar(digit + 48);
 
-	for (i = 0; i <= 9; i++)
-	{
-	for (j = 0; j <= 9; j++)
-	{
-	if (i < j)
-	{
-	putchar(i + '0');
-	putchar(',');
-	putchar(' ');
-	putchar(j + '0');
-}
-}
-}
-return (0);
+		if (digit != 9)
+		{
+			putchar(' ');
+			putchar(' ');
+		}
+		
+		digit++;
+	}		
+	putchar('\n');
+
+	return (0);
+
 }
