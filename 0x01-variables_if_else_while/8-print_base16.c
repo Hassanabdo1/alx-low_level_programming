@@ -10,11 +10,15 @@
 
 int main(void)
 {
-	int i;
+	int digit = 48;
 
-	for (i = 10; i <= 15; i++)
-	{
-		putchar(i + 'a' - 10);
+	while (digit <= 102;)
+	{	
+		putchar(digit);
+
+		if (digit == 57)
+			digit += 39;
+		digit++;
 	}
 
 	putchar('\n');
