@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  *
  * Description: print all alphabet letters except q and e
  *
- * Return: 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
