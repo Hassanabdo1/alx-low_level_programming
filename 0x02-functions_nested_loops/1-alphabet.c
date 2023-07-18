@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * print_alphabet utlilzes on the _putchar function toprint
+ * print_alphabet - utlilzes on the _putchar function to print
  * print_alphabet the alohabet a - z
  */
 
