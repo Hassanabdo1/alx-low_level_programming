@@ -4,7 +4,7 @@
  * _abs - function that computes the absolute
  * value of an integer
  *
- * @c: takes integer ty[e input for function
+ * @c: takes integer type input for function
  *
  * Return: Always 0 (success)
  */
