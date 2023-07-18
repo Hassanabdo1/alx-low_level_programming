@@ -1,27 +1,20 @@
 #include "main.h"
 
-/*
- * Function: _isalpha
- * ------------------
- * Checks whether a given character is an alphabetic character or not.
- *
- * c: The character to be checked.
- *
- * returns: 1 if c is a letter (lowercase or uppercase), 0 otherwise.
- */
-
-int _isalpha(int c);
-
-int main(void)
+int _isalpha(int c)
 {
-	char ch;
+/* Check if c is between 'a' and 'z', inclusive, or between 'A' and 'Z', inclusive. */
+	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
+		return 1;
+	}else {
+		return 0;
+	}
+}
 
-	printf("Enter a character: ");
-	scanf("%c", &ch);
-
-	if (_isalpha(ch))
-		printf("%c is an alphabetic character.\n", ch);
-	else
-		printf("%c is not an alphabetic character.\n", ch);
+int test_isalpha(void)
+{
+	char ch = 'a';
+	int is_alpha = _isalpha(ch);
+	printf("The character '%c' is alpha: %d\n", ch, is_alpha);
 	return 0;
 }
+
