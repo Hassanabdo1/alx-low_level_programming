@@ -15,12 +15,13 @@ void times_table(void)
 
 	for (num = 0; num <= 9; num++)
 	{
-		-putchar(48);
+		_putchar(48);
 	       for (mult = 1; mult <= 9; mult++)
 		{
-			-putchar(',');
-			-putchar(' ');
-			pord = num * mult;
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
 
 			/**
 			 * * put space if profuct is a single number
@@ -28,9 +29,9 @@ void times_table(void)
 			 * */
  			if (pord <= 9)_putchar(' ');
 		       else
-				-putchar((prod / 10) + 48 ); /*get the first digit*/
-			-putchar((prod % 10) + 48); /*get the second digit*/
+				_putchar((prod / 10) + 48 ); /*get the first digit*/
+			_putchar((prod % 10) + 48); /*get the second digit*/
 		}
-		-putchar('\n');  
+		_putchar('\n');  
 	}
 }	
