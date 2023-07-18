@@ -1,20 +1,18 @@
 #include "main.h"
 
+/**
+ * _isalpha -checks if character is a letter 
+ * 	both loercase or uppercase
+ *
+ * @c: takes input from  other function.
+ *
+ * Return 1 is c if true else 0
+ */
+
 int _isalpha(int c)
 {
-/* Check if c is between 'a' and 'z', inclusive, or between 'A' and 'Z', inclusive. */
-	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
-		return 1;
-	}else {
-		return 0;
-	}
-
-
-int test_isalpha(void)
-{
-	char ch = 'a';
-	int is_alpha = _isalpha(ch);
-	printf("The character '%c' is alpha: %d\n", ch, is_alpha);
-	return 0;
-}
+	if (c >= 97 && c <= 122)
+		return (1);
+	 if (c >= 65 && c <= 90)
+		 return (1);
 }
