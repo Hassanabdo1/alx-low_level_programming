@@ -8,7 +8,7 @@ int _isalpha(int c)
 	}else {
 		return 0;
 	}
-}
+
 
 int test_isalpha(void)
 {
@@ -17,4 +17,4 @@ int test_isalpha(void)
 	printf("The character '%c' is alpha: %d\n", ch, is_alpha);
 	return 0;
 }
-
+}
