@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - print 0 - 14 ten times and you
- *can onlu use _putchar ther times
+ * can onlu use _putchar ther times
  * Return: Always 0 (success)
  */
 
