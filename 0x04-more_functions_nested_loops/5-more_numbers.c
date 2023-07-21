@@ -7,8 +7,7 @@
  * Return: Always 0 (success)
  */
 
-void more_numbers(void)
-{
+void more_numbers(void){
 	int num, row, count;
 
 	for (row = 1; row <= 10; row++)
@@ -25,4 +24,4 @@ void more_numbers(void)
 		}
 		_putchar('\n');
 	}
-}
+
