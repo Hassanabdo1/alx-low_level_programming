@@ -3,6 +3,7 @@
 /**
  * more_numbers - print 0 - 14 ten times using _putchar three times only
  */
+
 void more_numbers(void)
 {
 	int num, row, count;
