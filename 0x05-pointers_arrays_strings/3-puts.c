@@ -3,7 +3,7 @@
 /**
  * _puts - prints a string, followed by a new line
  *
- * &stt: string paramoter to print
+ * &str: string paramoter to print
  *
  * Return: Nothing
  */
