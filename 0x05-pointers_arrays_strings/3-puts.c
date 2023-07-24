@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _puts - prints a string, followed by a new line 
+ * _puts - prints a string, followed by a new line
  *
- * &stt: string paramoter to print 
+ * &stt: string paramoter to print
  *
  * Return: Nothing
  */
