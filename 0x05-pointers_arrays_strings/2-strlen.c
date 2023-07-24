@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen _ retuns the length of a string
+ * _strlen - retuns the length of a string
  *
  * @s: input prameter 1
  *
