@@ -1,12 +1,13 @@
 #include "lists.h"
 
 /**
+ * print_list - prints all the elements of a list_t list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
  * @brief Prints the contents of a linked list.
  *
  * This function prints the strings and their corresponding lengths stored in the linked list pointed to by `h`.
  * If a string is NULL, it prints "(nil)" instead.
- *
- * @param h Pointer to the head of the linked list.
  * * Return: number of elements in the list.
  */
 size_t print_list(const list_t *h)
