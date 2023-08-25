@@ -1,19 +1,19 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
- * @brief Frees the memory used by the linked list.
- * @param head Pointer to the head of the list.
- * Return: no return.
- * 
+ * free_list - frees a linked list
+ * @head: list_t list to be freed
  */
 void free_list(list_t *head)
 {
-    list_t *current_node;
+	list_t *temp;
 
-    while ((current_node = head) != NULL)
-    {
-        head = head->next;
-        free(current_node->str);
-        free(current_node);
-    }
+	while (head)
+	{
+		temp = head->next;
+		free(head->str);
+		free(head);
+		head = temp;
+	}
 }
