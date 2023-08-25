@@ -7,7 +7,7 @@
  * If a string is NULL, it prints "(nil)" instead.
  *
  * @param h Pointer to the head of the linked list.
- * @return The number of nodes in the linked list.
+ * * Return: number of elements in the list.
  */
 size_t print_list(const list_t *h)
 {
