@@ -3,10 +3,9 @@
 /**
  * print_list - prints all the elements of a list_t list.
  * @h: singly linked list.
+ * brief Prints the contents of a linked list.
  * Return: number of elements in the list.
- * @brief Prints the contents of a linked list.
- *
- * This function prints the strings and their corresponding lengths stored in the linked list pointed to by `h`.
+ * 
  * If a string is NULL, it prints "(nil)" instead.
  * * Return: number of elements in the list.
  */
