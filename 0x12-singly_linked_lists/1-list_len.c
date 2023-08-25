@@ -1,4 +1,4 @@
-#include "list_s.h"
+#include "lists.h"
 
 /**
  * @brief Computes the length of a linked list.

@@ -1,4 +1,4 @@
-#include "list_s.h"
+#include "lists.h"
 
 /**
  * @brief Adds a new node with the given string to the beginning of the linked list.

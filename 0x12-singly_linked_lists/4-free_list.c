@@ -1,4 +1,4 @@
-#include "list_s.h"
+#include "lists.h"
 
 /**
  * @brief Frees the memory used by the linked list.
