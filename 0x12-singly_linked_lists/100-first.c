@@ -1,13 +1,13 @@
 #include <stdio.h>
 
+void first(void) __attribute__ ((constructor));
+
 /**
- * @brief Constructor function that runs before the main function.
- *
- * This function is automatically executed before the `main` function is called.
- * It prints out a message.
+ * first - prints a sentence before the main
+ * function is executed
  */
-void __attribute__ ((constructor)) first()
+void first(void)
 {
-    printf("You're beat! and yet, you must allow");
-    printf(",\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
