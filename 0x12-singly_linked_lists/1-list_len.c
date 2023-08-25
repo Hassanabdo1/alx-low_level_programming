@@ -1,15 +1,13 @@
-#include "lists.h"
 #include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "lists.h"
 
 /**
  * @brief Computes the length of a linked list.
  *
  * This function counts the number of nodes in the linked list pointed to by `h`.
  *
- * @param h Pointer to the head of the linked list.
- * @return The number of nodes in the linked list.
+ * @h: Pointer to the head of the linked list.
+ * Return The number of elements in the linked list.
  */
 size_t list_len(const list_t *h)
 {
