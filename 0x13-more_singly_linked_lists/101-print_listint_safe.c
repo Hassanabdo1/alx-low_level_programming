@@ -15,29 +15,29 @@ size_t print_listint_safe(const listint_t *head);
  */
 size_t looped_listint_len(const listint_t *head)
 {
- const listint_t *nod, *j;
+ const listint_t *nod, *hare;
  size_t nodes = 1;
 
  if (head == NULL || head->next == NULL)
  return (0);
 
  nod = head->next;
- j = (head->next)->next;
+ hare = (head->next)->next;
 
- while (j)
+ while (hare)
  {
- if (nod == j)
+ if (nod == hare)
  {
  nod = head;
- while (nod != j)
+ while (nod != hare)
  {
  nodes++;
  nod = nod->next;
- j = j->next;
+ hare = hare->next;
  }
 
  nod = nod->next;
- while (nod != j)
+ while (nod != hare)
  {
  nodes++;
  nod = nod->next;
@@ -47,7 +47,7 @@ size_t looped_listint_len(const listint_t *head)
  }
 
  nod = nod->next;
- j = (j->next)->next;
+ hare = (hare->next)->next;
  }
 
  return (0);
