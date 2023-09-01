@@ -2,8 +2,8 @@
 
 /**
  * print_binary - prints the binary equivalent of a decimal number
- * @n: the number to print in binary
- * 
+ * @n: the number to print in pinary
+ *
  * Return: void
  */
 void print_binary(unsigned long int n)
