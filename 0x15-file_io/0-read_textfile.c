@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buf;
 	ssize_t byest;
-	ssize_t w;
+	ssize_t num;
 	ssize_t t;
 
 	byest = open(filename, O_RDONLY);
@@ -20,9 +20,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
 	t = read(byest, buf, letters);
-	w = write(STDOUT_FILENO, buf, t);
+	num = write(STDOUT_FILENO, buf, t);
 
 	free(buf);
 	close(byest);
-	return (w);
+	return (num);
 }
