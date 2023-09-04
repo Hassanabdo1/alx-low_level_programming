@@ -2,8 +2,8 @@
 
 /**
  * append_text_to_file - Appends text at the end of a file.
- * @filename: A pointer to the name of the file.
- * @text_content: The string to add to the end of the file.
+ * @filename: name of file to creat
+ * @text_content: text to write
  *
  * Return: 1 of success 0 on faliure
  */
