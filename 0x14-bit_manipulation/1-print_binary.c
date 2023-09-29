@@ -1,28 +1,34 @@
 #include "main.h"
 
 /**
- * print_binary - prints the binary equivalent of a decimal number
- * @n: the number to print in pinary
+ * print_binary - Prints the binary representation of an unsigned long int.
+ * @n: The number to print in binary.
+ *
+ * This function takes an unsigned long int 'n' and prints its binary
+ * representation to the standard output.
+ *
+ * @n: The number to convert and print.
  *
  * Return: void
  */
 void print_binary(unsigned long int n)
 {
-	int nop, counts = 0;
+	int tmp, result = 0;
 	unsigned long int current;
 
-	for (nop = 63; nop >= 0; nop--)
+	for (tmp = 63; tmp >= 0; tmp--)
 	{
-		current = n >> nop;
+		current = n >> tmp;
 
 		if (current & 1)
 		{
 			_putchar('1');
-			counts++;
+			result++;
 		}
-		else if (counts)
+		else if (result)
 			_putchar('0');
 	}
-	if (!counts)
+	if (!result)
 		_putchar('0');
 }
+
