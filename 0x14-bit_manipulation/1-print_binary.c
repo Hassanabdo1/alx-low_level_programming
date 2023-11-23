@@ -14,13 +14,13 @@
 void print_binary(unsigned long int j)
 {
 	int tl = 63, resolt = 0;
-	unsigned long int current;
+	unsigned long int centrly;
 
 	while (tl >= 0)
 	{
-		current = j >> tl;
+		centrly = j >> tl;
 
-		switch (current & 1)
+		switch (centrly & 1)
 		{
 			case 1:
 				_putchar('1');
