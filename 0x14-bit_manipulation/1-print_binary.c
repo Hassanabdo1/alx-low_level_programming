@@ -2,33 +2,39 @@
 
 /**
  * print_binary - Prints the binary representation of an unsigned long int.
- * @n: The number to print in binary.
+ * @j: The number to print in binary.
  *
- * This function takes an unsigned long int 'n' and prints its binary
+ * This function takes an unsigned long int 'j' and prints its binary
  * representation to the standard output.
  *
- * @n: The number to convert and print.
+ * @j: The number to convert and print.
  *
  * Return: void
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int j)
 {
-	int tmp, result = 0;
+	int tl = 63, resolt = 0;
 	unsigned long int current;
 
-	for (tmp = 63; tmp >= 0; tmp--)
+	while (tl >= 0)
 	{
-		current = n >> tmp;
+		current = j >> tl;
 
-		if (current & 1)
+		switch (current & 1)
 		{
-			_putchar('1');
-			result++;
+			case 1:
+				_putchar('1');
+				resolt++;
+				break;
+			case 0:
+				if (resolt)
+					_putchar('0');
+				break;
 		}
-		else if (result)
-			_putchar('0');
+
+		tl--;
 	}
-	if (!result)
+
+	if (!resolt)
 		_putchar('0');
 }
-
