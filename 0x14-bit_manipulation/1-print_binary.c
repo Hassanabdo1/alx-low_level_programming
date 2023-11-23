@@ -4,12 +4,7 @@
  * print_binary - Prints the binary representation of an unsigned long int.
  * @j: The number to print in binary.
  *
- * This function takes an unsigned long int 'j' and prints its binary
- * representation to the standard output.
- *
- * @j: The number to convert and print.
- *
- * Return: void
+ * Prints the binary representation of the given unsigned long int 'j' to stdout.
  */
 void print_binary(unsigned long int j)
 {
