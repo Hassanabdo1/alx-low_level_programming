@@ -3,8 +3,6 @@
 /**
  * print_binary - Prints the binary representation of an unsigned long int.
  * @j: The number to print in binary.
- *
- * Prints the binary representation of the given unsigned long int 'j' to stdout.
  */
 void print_binary(unsigned long int j)
 {
