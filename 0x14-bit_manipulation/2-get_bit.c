@@ -9,12 +9,8 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int nobe;
-
 	if (index > 63)
 		return (-1);
 
-	nobe = (n >> index) & 1;
-
-	return (nobe);
+	return (n >> index) & 1;
 }
