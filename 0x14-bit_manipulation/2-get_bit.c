@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * get_bit - returns the value of a bit at an index in a decimal number
- * @n: number to index
- * @index: the bit to get
+ * get_bit - Returns the value of a bit at a specified index in a decimal number.
+ * @n: Number to index.
+ * @index: Index of the bit to retrieve.
  *
- * Return: the bit state or -1 on error
+ * Return: The bit state or -1 if the index is out of range.
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
