@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
- * flip_bits - Count differing bits between two numbers.
- * @n: First number.
- * @m: Second number.
+ * flip_bits - conts the number of differing bits between two numbers.
+ * @n: The first number.
+ * @m: The second number.
  *
- * Returns count of differing bits between 'n' and 'm'.
+ * This function calculates the number of bits that need to be flipped in order
+ * to convert 'n' into 'm'.
+ *
+ * Return: The cont of differing bits.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
