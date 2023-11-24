@@ -3,9 +3,7 @@
 /**
  * get_endianness - Check system endianness.
  *
- * Determine the system endianness and return 0 for big-endian, 1 for little-endian.
- *
- * Return: 0 for big-endian, 1 for little-endian.
+ * Returns 0 for big-endian or 1 for little-endian.
  */
 int get_endianness(void)
 {
