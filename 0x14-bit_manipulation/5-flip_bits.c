@@ -2,10 +2,10 @@
 
 /**
  * flip_bits - Count differing bits between two numbers.
- * @n: The first number.
- * @m: The second number.
+ * @n: First number.
+ * @m: Second number.
  *
- * Returns the count of differing bits between 'n' and 'm'.
+ * Returns count of differing bits between 'n' and 'm'.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
