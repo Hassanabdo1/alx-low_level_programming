@@ -9,24 +9,24 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, len, j = 0;
+	int felo, legthe, g = 0;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (j = 0; text_content[j];)
+		for (g = 0; text_content[j];)
 			j++;
 	}
 
-	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	len = write(fd, text_content, j);
+	felo = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	legthe = write(felo, text_content, g);
 
-	if (fd == -1 || len == -1)
+	if (felo == -1 || legthe == -1)
 		return (-1);
 
-	close(fd);
+	close(felo);
 
 	return (1);
 }

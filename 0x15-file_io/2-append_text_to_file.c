@@ -9,24 +9,24 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, num, j = 0;
+	int felo, number, g = 0;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (j = 0; text_content[j];)
+		for (g = 0; text_content[g];)
 			j++;
 	}
 
-	fd = open(filename, O_WRONLY | O_APPEND);
-	num = write(fd, text_content, j);
+	felo = open(filename, O_WRONLY | O_APPEND);
+	number = write(felo, text_content, g);
 
-	if (fd == -1 || num == -1)
+	if (felo == -1 || number == -1)
 		return (-1);
 
-	close(fd);
+	close(felo);
 
 	return (1);
 }
