@@ -9,22 +9,26 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int felo, number, g = 0;
+	int felo, number, tem;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
-
-	if (text_content != NULL)
-	{
-		for (g = 0; text_content[g];)
-			j++;
-	}
 
 	felo = open(filename, O_WRONLY | O_APPEND);
-	number = write(felo, text_content, g);
 
-	if (felo == -1 || number == -1)
+	if (felo == -1)
 		return (-1);
+
+	if (text_content)
+	{
+		for (number = 0; text_content[number]; number++)
+			;
+
+		tem = write(felo, text_content, number);
+
+		if (tem == -1)
+			return (-1);
+	}
 
 	close(felo);
 
