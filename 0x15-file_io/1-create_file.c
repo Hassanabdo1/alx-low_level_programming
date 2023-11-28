@@ -9,21 +9,27 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int felo, legthe, g = 0;
+	int felo;
+	int number;
+	int tem;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 
-	if (text_content != NULL)
-	{
-		for (g = 0; text_content[j];)
-			j++;
-	}
+	felo = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	felo = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	legthe = write(felo, text_content, g);
+	if (felo == -1)
+		return (-1);
 
-	if (felo == -1 || legthe == -1)
+	if (!text_content)
+		text_content = "";
+
+	for (number = 0; text_content[number]; number++)
+		;
+
+	tem = write(felo, text_content, number);
+
+	if (tem == -1)
 		return (-1);
 
 	close(felo);
